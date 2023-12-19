@@ -1,12 +1,12 @@
 {
   "name": "OSD Volume",
   "author": "Ticky",
-  "version": "v0.1.1",
-  "description": "Style the Steam Deck volume control to look like an oldschool CRT TV's on-screen display. Uses VRC OSD Mono font by Riciery Leal.",
+  "version": "v0.1.2",
+  "description": "Style the Steam Deck volume control to look like an oldschool CRT TV's on-screen display. Uses VCR OSD Mono font by Riciery Leal.",
   "manifest_version": 9,
-  "target": "Library",
+  "target": "Tweak",
   "inject": {
-    "index.css": ["SP"]
+    "index.css": ["bigpicture"]
   },
   "patches": {
     "Preview": {
@@ -14,7 +14,7 @@
       "values": {
         "No": {},
         "Yes": {
-          "preview.css": ["SP"]
+          "preview.css": ["bigpicture"]
         }
       }
     }
