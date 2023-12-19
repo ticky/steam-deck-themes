@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('/themes_custom/PSVolume/fonts/vcr_osd_mono_1.001.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.audio_VolumePopin_2iUUM,
+.audio_VolumePopin_2iUUM.audio_VolumePopinHidden_1OwmL {
+  font-family: 'VCR OSD Mono';
+  font-size: 42px;
+  color: #00EE00;
+
+  pointer-events: none;
+
+  width: 12em;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 16%;
+
+  background: transparent;
+  box-shadow: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  transition-property: opacity;
+}
+
+.audio_VolumePopin_2iUUM.audio_VolumePopinHidden_1OwmL {
+  transform: none;
+  opacity: 0;
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldChildrenWithIcon_2ZQ9w {
+  /*align-items: center;*/
+  flex-direction: column;
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldIcon_1sC68 {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldIcon_1sC68::after {
+  content: 'VOLUME';
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldIcon_1sC68 > svg {
+  /* height: 35px; */
+  display: none;
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldChildrenInner_3N47t {
+  height: 1em;
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderControlPanelGroup_MY8iY,
+.audio_VolumePopin_2iUUM .gamepadslider_SliderControl_3o137,
+.audio_VolumePopin_2iUUM .gamepadslider_SliderControlAndNotches_1Cccx,
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N {
+  height: 100%;
+}
+
+/*.audio_VolumePopin_2iUUM .gamepadslider_SliderControl_3o137 {
+  --ticky-osdvolume-volume-level: round(calc(var(--normalized-slider-value) * 100), 1);
+  counter-reset: volume-level var(--ticky-osdvolume-volume-level);
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderControl_3o137::after {
+  content: counter(volume-level);
+}*/
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N,
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N::before {
+  background: linear-gradient(
+    to right,
+    currentColor,
+    currentColor 70%,
+    transparent 70%,
+    transparent
+  );
+  background-position-y: center;
+  background-repeat: repeat-x;
+  border-radius: 0;
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N {
+  background-size: .568em 15%;
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N::before {
+  background-size: .568em 100%;
+}
